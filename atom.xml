@@ -58,26 +58,6 @@
   
   <entry>
     <title></title>
-    <link href="http://example.com/2022/04/12/2022-05-27-%E3%80%8CGAN%E3%80%8D2021EMNLP%EF%BC%9A%E5%AF%B9LGAN%E8%BF%9B%E8%A1%8CCounter-Contrastive%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://example.com/2022/04/12/2022-05-27-%E3%80%8CGAN%E3%80%8D2021EMNLP%EF%BC%9A%E5%AF%B9LGAN%E8%BF%9B%E8%A1%8CCounter-Contrastive%E5%AD%A6%E4%B9%A0/</id>
-    <published>2022-04-12T08:45:27.104Z</published>
-    <updated>2022-05-27T13:37:36.513Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Counter-Contrastive-学习：训练Language-GAN"><a href="#Counter-Contrastive-学习：训练Language-GAN" class="headerlink" title="Counter-Contrastive 学习：训练Language GAN"></a>Counter-Contrastive 学习：训练Language GAN</h1><h2 id="Publish"><a href="#Publish" class="headerlink" title="Publish"></a>Publish</h2><p>2021EMNLP</p><h2 id="title"><a href="#title" class="headerlink" title="title"></a>title</h2><p><a href="https://aclanthology.org/2021.findings-emnlp.415.pdf">Counter-Contrastive Learning for Language GANs</a></p><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>生成对抗网络(GANs)在图像合成方面取得了巨大的成功，但在生成自然语言方面存在一定的困难。挑战来自于鉴别器传递的uninformative learning signal。换句话说，<strong>糟糕的learning singnal限制了生成结构丰富、语义丰富的语言的学习能力</strong>。在本文中，我们提出在语言gan中采用反对比学习(CCL)方法来支持生成器的训练。与标准的GANs采用简单的二元分类器来区分样本的真假相比，我们采用了一种反对比学习信号，通过提高语言合成器的训练</p><ul><li>(1)把生成样本与真实样本 放在一起（以生成真实的数据）</li><li>(2)推开真实的样本（以阻碍鉴别的训练）从而防止鉴别器被过度训练。</li></ul><p>我们在合成基准和实际基准上评估了我们的方法，并与以前的GAN相比，在对抗序列生成方面产生了具有竞争力的性能。</p><h2 id="Solution-problem"><a href="#Solution-problem" class="headerlink" title="Solution problem"></a>Solution problem</h2><p>CCL<br>$$<br>\mathcal{L}<em>{i}=-\log \frac{e^{\operatorname{sim}\left(\mathbf{h}</em>{i}, \mathbf{h}<em>{i}^{-}\right) / \tau}}{\sum</em>{j=1}^{N}\left(e^{\operatorname{sim}\left(\mathbf{h}<em>{j}, \mathbf{h}</em>{j}^{-}\right) / \tau}+e^{\operatorname{sim}\left(\mathbf{h}<em>{j}, \mathbf{h}</em>{j}^{+}\right) / \tau}\right)}<br>$$</p><h2 id="Experiment"><a href="#Experiment" class="headerlink" title="Experiment"></a>Experiment</h2><h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>没代码，不看了。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;Counter-Contrastive-学习：训练Language-GAN&quot;&gt;&lt;a href=&quot;#Counter-Contrastive-学习：训练Language-GAN&quot; class=&quot;headerlink&quot; title=&quot;Counter-Contrastiv</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
     <link href="http://example.com/2022/04/12/2022-05-26-%E3%80%8C%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA%E3%80%8D2022NAACL%EF%BC%9ATextSmoth/"/>
     <id>http://example.com/2022/04/12/2022-05-26-%E3%80%8C%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA%E3%80%8D2022NAACL%EF%BC%9ATextSmoth/</id>
     <published>2022-04-12T08:45:27.104Z</published>
@@ -89,6 +69,26 @@
       
       
     <summary type="html">&lt;h1 id=&quot;Text-Smoothing：一种数据结合mix-up的数据增强方法&quot;&gt;&lt;a href=&quot;#Text-Smoothing：一种数据结合mix-up的数据增强方法&quot; class=&quot;headerlink&quot; title=&quot;Text Smoothing：一种数据结合mix</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2022/04/12/2022-05-27-%E3%80%8CGAN%E3%80%8D2021EMNLP%EF%BC%9A%E5%AF%B9LGAN%E8%BF%9B%E8%A1%8CCounter-Contrastive%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://example.com/2022/04/12/2022-05-27-%E3%80%8CGAN%E3%80%8D2021EMNLP%EF%BC%9A%E5%AF%B9LGAN%E8%BF%9B%E8%A1%8CCounter-Contrastive%E5%AD%A6%E4%B9%A0/</id>
+    <published>2022-04-12T08:45:27.104Z</published>
+    <updated>2022-05-27T13:37:36.513Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Counter-Contrastive-学习：训练Language-GAN"><a href="#Counter-Contrastive-学习：训练Language-GAN" class="headerlink" title="Counter-Contrastive 学习：训练Language GAN"></a>Counter-Contrastive 学习：训练Language GAN</h1><h2 id="Publish"><a href="#Publish" class="headerlink" title="Publish"></a>Publish</h2><p>2021EMNLP</p><h2 id="title"><a href="#title" class="headerlink" title="title"></a>title</h2><p><a href="https://aclanthology.org/2021.findings-emnlp.415.pdf">Counter-Contrastive Learning for Language GANs</a></p><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>生成对抗网络(GANs)在图像合成方面取得了巨大的成功，但在生成自然语言方面存在一定的困难。挑战来自于鉴别器传递的uninformative learning signal。换句话说，<strong>糟糕的learning singnal限制了生成结构丰富、语义丰富的语言的学习能力</strong>。在本文中，我们提出在语言gan中采用反对比学习(CCL)方法来支持生成器的训练。与标准的GANs采用简单的二元分类器来区分样本的真假相比，我们采用了一种反对比学习信号，通过提高语言合成器的训练</p><ul><li>(1)把生成样本与真实样本 放在一起（以生成真实的数据）</li><li>(2)推开真实的样本（以阻碍鉴别的训练）从而防止鉴别器被过度训练。</li></ul><p>我们在合成基准和实际基准上评估了我们的方法，并与以前的GAN相比，在对抗序列生成方面产生了具有竞争力的性能。</p><h2 id="Solution-problem"><a href="#Solution-problem" class="headerlink" title="Solution problem"></a>Solution problem</h2><p>CCL<br>$$<br>\mathcal{L}<em>{i}=-\log \frac{e^{\operatorname{sim}\left(\mathbf{h}</em>{i}, \mathbf{h}<em>{i}^{-}\right) / \tau}}{\sum</em>{j=1}^{N}\left(e^{\operatorname{sim}\left(\mathbf{h}<em>{j}, \mathbf{h}</em>{j}^{-}\right) / \tau}+e^{\operatorname{sim}\left(\mathbf{h}<em>{j}, \mathbf{h}</em>{j}^{+}\right) / \tau}\right)}<br>$$</p><h2 id="Experiment"><a href="#Experiment" class="headerlink" title="Experiment"></a>Experiment</h2><h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>没代码，不看了。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Counter-Contrastive-学习：训练Language-GAN&quot;&gt;&lt;a href=&quot;#Counter-Contrastive-学习：训练Language-GAN&quot; class=&quot;headerlink&quot; title=&quot;Counter-Contrastiv</summary>
       
     
     
@@ -158,26 +158,6 @@
   
   <entry>
     <title></title>
-    <link href="http://example.com/2020/12/26/2022-04-08-WhiteningBERT/"/>
-    <id>http://example.com/2020/12/26/2022-04-08-WhiteningBERT/</id>
-    <published>2020-12-26T08:14:36.000Z</published>
-    <updated>2022-05-01T13:11:59.602Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="WhiteningBERT：降低向量维度且效果提高"><a href="#WhiteningBERT：降低向量维度且效果提高" class="headerlink" title="WhiteningBERT：降低向量维度且效果提高"></a>WhiteningBERT：降低向量维度且效果提高</h1><h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>使用BERT等模型生成句向量，使用FAISS或ElasticSearch（ES）等引擎进行语义向量检索，是工业界常用的方法。然后在巨大的数据量时搜索时间成本巨大。</p><p>Whitening-BERT借鉴PCA方法对语义向量进行降维。有效提升语义相似度计算的效果。</p><p>首先介绍一下PCA降维降维方法。</p><h2 id="PCA（主成分分析）"><a href="#PCA（主成分分析）" class="headerlink" title="PCA（主成分分析）"></a>PCA（主成分分析）</h2><p><a href="https://www.bilibili.com/video/BV1E5411E71z?share_source=copy_web">用最直观的方式告诉你：什么是主成分分析PCA</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;WhiteningBERT：降低向量维度且效果提高&quot;&gt;&lt;a href=&quot;#WhiteningBERT：降低向量维度且效果提高&quot; class=&quot;headerlink&quot; title=&quot;WhiteningBERT：降低向量维度且效果提高&quot;&gt;&lt;/a&gt;WhiteningBE</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
     <link href="http://example.com/2020/12/26/2022-04-01-simcse%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/"/>
     <id>http://example.com/2020/12/26/2022-04-01-simcse%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</id>
     <published>2020-12-26T08:14:36.000Z</published>
@@ -189,6 +169,26 @@
       
       
     <summary type="html">&lt;h1 id=&quot;SimCSE：一种对比学习数据增强方法&quot;&gt;&lt;a href=&quot;#SimCSE：一种对比学习数据增强方法&quot; class=&quot;headerlink&quot; title=&quot;SimCSE：一种对比学习数据增强方法&quot;&gt;&lt;/a&gt;SimCSE：一种对比学习数据增强方法&lt;/h1&gt;&lt;h1 i</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2020/12/26/2022-04-08-WhiteningBERT/"/>
+    <id>http://example.com/2020/12/26/2022-04-08-WhiteningBERT/</id>
+    <published>2020-12-26T08:14:36.000Z</published>
+    <updated>2022-05-01T13:11:59.602Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="WhiteningBERT：降低向量维度且效果提高"><a href="#WhiteningBERT：降低向量维度且效果提高" class="headerlink" title="WhiteningBERT：降低向量维度且效果提高"></a>WhiteningBERT：降低向量维度且效果提高</h1><h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>使用BERT等模型生成句向量，使用FAISS或ElasticSearch（ES）等引擎进行语义向量检索，是工业界常用的方法。然后在巨大的数据量时搜索时间成本巨大。</p><p>Whitening-BERT借鉴PCA方法对语义向量进行降维。有效提升语义相似度计算的效果。</p><p>首先介绍一下PCA降维降维方法。</p><h2 id="PCA（主成分分析）"><a href="#PCA（主成分分析）" class="headerlink" title="PCA（主成分分析）"></a>PCA（主成分分析）</h2><p><a href="https://www.bilibili.com/video/BV1E5411E71z?share_source=copy_web">用最直观的方式告诉你：什么是主成分分析PCA</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;WhiteningBERT：降低向量维度且效果提高&quot;&gt;&lt;a href=&quot;#WhiteningBERT：降低向量维度且效果提高&quot; class=&quot;headerlink&quot; title=&quot;WhiteningBERT：降低向量维度且效果提高&quot;&gt;&lt;/a&gt;WhiteningBE</summary>
       
     
     
