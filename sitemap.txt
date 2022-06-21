@@ -1,3 +1,4 @@
+http://example.com/2020/12/26/2022-04-08-WhiteningBERT/
 http://example.com/2020/12/26/2022-04-01-simcse%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/
 http://example.com/2022/06/21/hello-world/
 http://example.com/2022/04/12/2022-06-16-%E3%80%8Cpytorch%E3%80%8D%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/
@@ -6,7 +7,6 @@ http://example.com/2022/04/12/2022-05-27-%E3%80%8CGAN%E3%80%8D2021EMNLP%EF%BC%9A
 http://example.com/2022/04/12/2022-05-28-%E3%80%8C%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA%E3%80%8D2022ACL%EF%BC%9AGlitter/
 http://example.com/2022/04/12/2022-05-26-%E3%80%8C%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA%E3%80%8D2022NAACL%EF%BC%9ATextSmoth/
 http://example.com/2022/04/12/2022-04-12-SeqGAN/
-http://example.com/2020/12/26/2022-04-08-WhiteningBERT/
 http://example.com/
 http://example.com/tags/%E5%AF%B9%E6%AF%94%E5%AD%A6%E4%B9%A0/
 http://example.com/tags/%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA/

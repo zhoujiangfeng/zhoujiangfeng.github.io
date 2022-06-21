@@ -104,7 +104,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/06/21/hello-world/" data-id="cl4od7abc000b7fhobl3w8qtk" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/06/21/hello-world/" data-id="cl4odd8qz000ctzho969q94pt" class="article-share-link">Share</a>
       
       
     </footer>
@@ -134,7 +134,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/12/2022-04-12-SeqGAN/" data-id="cl4od7ab900047fhodc0b14fs" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/04/12/2022-04-12-SeqGAN/" data-id="cl4odd8qu0002tzho9yzg76jh" class="article-share-link">Share</a>
       
       
     </footer>
@@ -239,7 +239,7 @@ MLM(t_i)=softmax(\overrightarrow(t_i)W^T)
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/12/2022-05-26-%E3%80%8C%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA%E3%80%8D2022NAACL%EF%BC%9ATextSmoth/" data-id="cl4od7aba00057fhoaa2yf9mu" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/04/12/2022-05-26-%E3%80%8C%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA%E3%80%8D2022NAACL%EF%BC%9ATextSmoth/" data-id="cl4odd8qw0005tzho20873iz8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -284,7 +284,7 @@ MLM(t_i)=softmax(\overrightarrow(t_i)W^T)
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/12/2022-05-27-%E3%80%8CGAN%E3%80%8D2021EMNLP%EF%BC%9A%E5%AF%B9LGAN%E8%BF%9B%E8%A1%8CCounter-Contrastive%E5%AD%A6%E4%B9%A0/" data-id="cl4od7aba00067fho9nf7gz05" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/04/12/2022-05-27-%E3%80%8CGAN%E3%80%8D2021EMNLP%EF%BC%9A%E5%AF%B9LGAN%E8%BF%9B%E8%A1%8CCounter-Contrastive%E5%AD%A6%E4%B9%A0/" data-id="cl4odd8qw0006tzhoege2ezv2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -390,7 +390,35 @@ MLM(t_i)=softmax(\overrightarrow(t_i)W^T)
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/12/2022-05-28-%E3%80%8C%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA%E3%80%8D2022ACL%EF%BC%9AGlitter/" data-id="cl4od7abb00087fho2dsv2dse" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/04/12/2022-05-28-%E3%80%8C%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA%E3%80%8D2022ACL%EF%BC%9AGlitter/" data-id="cl4odd8qx0007tzho524j5nmp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-2022-06-16-「pytorch」快速上手" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2022/04/12/2022-06-16-%E3%80%8Cpytorch%E3%80%8D%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/" class="article-date">
+  <time datetime="2022-04-12T08:45:27.104Z" itemprop="datePublished">2022-04-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="样例-快速入门pytorch">样例-快速入门Pytorch</h1>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">import</span> torch.nn <span class="keyword">as</span> nn</span><br><span class="line"><span class="keyword">import</span> torch.nn.functional <span class="keyword">as</span> F</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> torch.autograd <span class="keyword">import</span> Variable</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line"><span class="keyword">import</span> torch.optim <span class="keyword">as</span> optim</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">modellogit</span>(nn.Module):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        nn.Module.__init__(self)</span><br><span class="line">        self.fc1 = nn.Linear(<span class="number">2</span>,<span class="number">16</span>)</span><br><span class="line">        self.fc2 = nn.Linear(<span class="number">16</span>,<span class="number">8</span>)</span><br><span class="line">        self.fc3 = nn.Linear(<span class="number">8</span>,<span class="number">1</span>)</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">forward</span>(<span class="params">self,x</span>):</span><br><span class="line">        x = torch.relu(self.fc1(x))</span><br><span class="line">        x = torch.relu(self.fc2(x))</span><br><span class="line">        x = self.fc3(x)</span><br><span class="line">        <span class="keyword">return</span> x</span><br><span class="line">    </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">hello_model</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,max_iter=<span class="number">200</span>,learning_rate=<span class="number">0.01</span>,l1=<span class="number">1e-4</span></span>):</span><br><span class="line">        self.model = modellogit()</span><br><span class="line">        self.max_iter = max_iter</span><br><span class="line">        self.learning_rate = learning_rate</span><br><span class="line">        self.l1 = l1</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">fit</span>(<span class="params">self,train_x,train_y</span>):</span><br><span class="line">        optimizer = optim.Adam(self.model.parameters(),lr = self.learning_rate)</span><br><span class="line">        criterion = nn.MSELoss()</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;训练开始&#x27;</span>)</span><br><span class="line">        <span class="keyword">for</span> epoch <span class="keyword">in</span> <span class="built_in">range</span>(self.max_iter):</span><br><span class="line">            input_x = torch.from_numpy(train_x).<span class="built_in">float</span>()</span><br><span class="line">            target = torch.from_numpy(train_y).<span class="built_in">float</span>()</span><br><span class="line">            <span class="comment">#梯度置零</span></span><br><span class="line">            optimizer.zero_grad()</span><br><span class="line">            <span class="comment">#正向传播</span></span><br><span class="line">            output = self.model(input_x)</span><br><span class="line">            <span class="comment">#反向传播</span></span><br><span class="line">            loss = criterion(output, target)</span><br><span class="line">            regular_loss = <span class="number">0</span></span><br><span class="line">            <span class="keyword">for</span> param <span class="keyword">in</span> self.model.parameters():</span><br><span class="line">                regular_loss += torch.<span class="built_in">sum</span>(torch.<span class="built_in">abs</span>(param))</span><br><span class="line">            loss += self.l1*regular_loss</span><br><span class="line">            loss.backward()</span><br><span class="line">            <span class="comment">#优化</span></span><br><span class="line">            optimizer.step()</span><br><span class="line">            <span class="keyword">if</span> epoch%<span class="built_in">int</span>(self.max_iter/<span class="number">5</span>) == <span class="number">0</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&#x27;[%d, %5d] loss: %.3f&#x27;</span>%(epoch+<span class="number">1</span>, epoch+<span class="number">1</span>, loss.data))</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;训练结束&#x27;</span>)</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">predict</span>(<span class="params">self,test_x</span>):</span><br><span class="line">        y_hat = self.model(torch.from_numpy(test_x).<span class="built_in">float</span>())</span><br><span class="line">        y_hat = y_hat.detach()</span><br><span class="line">        y_hat = y_hat.numpy()</span><br><span class="line">        <span class="keyword">return</span>(y_hat)</span><br><span class="line">    </span><br><span class="line">data_x = np.random.normal(size = (<span class="number">30000</span>,<span class="number">2</span>))</span><br><span class="line">data_y = data_x[:,[<span class="number">0</span>]] + data_x[:,[<span class="number">0</span>]]**<span class="number">2</span> + data_x[:,[<span class="number">1</span>]]**<span class="number">2</span>+\</span><br><span class="line">    data_x[:,[<span class="number">1</span>]]*<span class="number">4</span>+np.random.normal(size = (<span class="number">30000</span>,<span class="number">1</span>))*<span class="number">0.1</span></span><br><span class="line">train_x,test_x,train_y,test_y = train_test_split(data_x,data_y,test_size=<span class="number">0.33</span>, random_state=<span class="number">42</span>)</span><br><span class="line"></span><br><span class="line">model = hello_model(max_iter=<span class="number">5000</span>,learning_rate=<span class="number">0.001</span>)</span><br><span class="line">model.fit(train_x,train_y)</span><br><span class="line">model.predict(test_x)</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/12/2022-06-16-%E3%80%8Cpytorch%E3%80%8D%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/" data-id="cl4odd8qy0009tzho13isgmzx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -521,7 +549,7 @@ MLM(t_i)=softmax(\overrightarrow(t_i)W^T)
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/12/2022-06-14-%E3%80%8C%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA%E3%80%8D2022NAAC%EF%BC%9ATreeMix/" data-id="cl4od7abb00097fhogzs47nb4" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/04/12/2022-06-14-%E3%80%8C%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA%E3%80%8D2022NAAC%EF%BC%9ATreeMix/" data-id="cl4odd8qy000atzhoc6si2gjq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -531,10 +559,10 @@ MLM(t_i)=softmax(\overrightarrow(t_i)W^T)
 
 
   
-    <article id="post-2022-06-16-「pytorch」快速上手" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-2022-04-08-WhiteningBERT" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2022/04/12/2022-06-16-%E3%80%8Cpytorch%E3%80%8D%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/" class="article-date">
-  <time datetime="2022-04-12T08:45:27.104Z" itemprop="datePublished">2022-04-12</time>
+    <a href="/2020/12/26/2022-04-08-WhiteningBERT/" class="article-date">
+  <time datetime="2020-12-26T08:14:36.000Z" itemprop="datePublished">2020-12-26</time>
 </a>
     
   </div>
@@ -543,13 +571,18 @@ MLM(t_i)=softmax(\overrightarrow(t_i)W^T)
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="样例-快速入门pytorch">样例-快速入门Pytorch</h1>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">import</span> torch.nn <span class="keyword">as</span> nn</span><br><span class="line"><span class="keyword">import</span> torch.nn.functional <span class="keyword">as</span> F</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> torch.autograd <span class="keyword">import</span> Variable</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line"><span class="keyword">import</span> torch.optim <span class="keyword">as</span> optim</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">modellogit</span>(nn.Module):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        nn.Module.__init__(self)</span><br><span class="line">        self.fc1 = nn.Linear(<span class="number">2</span>,<span class="number">16</span>)</span><br><span class="line">        self.fc2 = nn.Linear(<span class="number">16</span>,<span class="number">8</span>)</span><br><span class="line">        self.fc3 = nn.Linear(<span class="number">8</span>,<span class="number">1</span>)</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">forward</span>(<span class="params">self,x</span>):</span><br><span class="line">        x = torch.relu(self.fc1(x))</span><br><span class="line">        x = torch.relu(self.fc2(x))</span><br><span class="line">        x = self.fc3(x)</span><br><span class="line">        <span class="keyword">return</span> x</span><br><span class="line">    </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">hello_model</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,max_iter=<span class="number">200</span>,learning_rate=<span class="number">0.01</span>,l1=<span class="number">1e-4</span></span>):</span><br><span class="line">        self.model = modellogit()</span><br><span class="line">        self.max_iter = max_iter</span><br><span class="line">        self.learning_rate = learning_rate</span><br><span class="line">        self.l1 = l1</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">fit</span>(<span class="params">self,train_x,train_y</span>):</span><br><span class="line">        optimizer = optim.Adam(self.model.parameters(),lr = self.learning_rate)</span><br><span class="line">        criterion = nn.MSELoss()</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;训练开始&#x27;</span>)</span><br><span class="line">        <span class="keyword">for</span> epoch <span class="keyword">in</span> <span class="built_in">range</span>(self.max_iter):</span><br><span class="line">            input_x = torch.from_numpy(train_x).<span class="built_in">float</span>()</span><br><span class="line">            target = torch.from_numpy(train_y).<span class="built_in">float</span>()</span><br><span class="line">            <span class="comment">#梯度置零</span></span><br><span class="line">            optimizer.zero_grad()</span><br><span class="line">            <span class="comment">#正向传播</span></span><br><span class="line">            output = self.model(input_x)</span><br><span class="line">            <span class="comment">#反向传播</span></span><br><span class="line">            loss = criterion(output, target)</span><br><span class="line">            regular_loss = <span class="number">0</span></span><br><span class="line">            <span class="keyword">for</span> param <span class="keyword">in</span> self.model.parameters():</span><br><span class="line">                regular_loss += torch.<span class="built_in">sum</span>(torch.<span class="built_in">abs</span>(param))</span><br><span class="line">            loss += self.l1*regular_loss</span><br><span class="line">            loss.backward()</span><br><span class="line">            <span class="comment">#优化</span></span><br><span class="line">            optimizer.step()</span><br><span class="line">            <span class="keyword">if</span> epoch%<span class="built_in">int</span>(self.max_iter/<span class="number">5</span>) == <span class="number">0</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&#x27;[%d, %5d] loss: %.3f&#x27;</span>%(epoch+<span class="number">1</span>, epoch+<span class="number">1</span>, loss.data))</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;训练结束&#x27;</span>)</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">predict</span>(<span class="params">self,test_x</span>):</span><br><span class="line">        y_hat = self.model(torch.from_numpy(test_x).<span class="built_in">float</span>())</span><br><span class="line">        y_hat = y_hat.detach()</span><br><span class="line">        y_hat = y_hat.numpy()</span><br><span class="line">        <span class="keyword">return</span>(y_hat)</span><br><span class="line">    </span><br><span class="line">data_x = np.random.normal(size = (<span class="number">30000</span>,<span class="number">2</span>))</span><br><span class="line">data_y = data_x[:,[<span class="number">0</span>]] + data_x[:,[<span class="number">0</span>]]**<span class="number">2</span> + data_x[:,[<span class="number">1</span>]]**<span class="number">2</span>+\</span><br><span class="line">    data_x[:,[<span class="number">1</span>]]*<span class="number">4</span>+np.random.normal(size = (<span class="number">30000</span>,<span class="number">1</span>))*<span class="number">0.1</span></span><br><span class="line">train_x,test_x,train_y,test_y = train_test_split(data_x,data_y,test_size=<span class="number">0.33</span>, random_state=<span class="number">42</span>)</span><br><span class="line"></span><br><span class="line">model = hello_model(max_iter=<span class="number">5000</span>,learning_rate=<span class="number">0.001</span>)</span><br><span class="line">model.fit(train_x,train_y)</span><br><span class="line">model.predict(test_x)</span><br></pre></td></tr></table></figure>
+        <h1 id="whiteningbert降低向量维度且效果提高">WhiteningBERT：降低向量维度且效果提高</h1>
+<h1 id="背景">背景</h1>
+<p>使用BERT等模型生成句向量，使用FAISS或ElasticSearch（ES）等引擎进行语义向量检索，是工业界常用的方法。然后在巨大的数据量时搜索时间成本巨大。</p>
+<p>Whitening-BERT借鉴PCA方法对语义向量进行降维。有效提升语义相似度计算的效果。</p>
+<p>首先介绍一下PCA降维降维方法。</p>
+<h2 id="pca主成分分析">PCA（主成分分析）</h2>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1E5411E71z?share_source=copy_web">用最直观的方式告诉你：什么是主成分分析PCA</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/12/2022-06-16-%E3%80%8Cpytorch%E3%80%8D%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/" data-id="cl4od7abc000d7fho1mh4b9fb" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/12/26/2022-04-08-WhiteningBERT/" data-id="cl4odd8ql0000tzhoddpr4026" class="article-share-link">Share</a>
       
       
     </footer>
@@ -658,44 +691,11 @@ MLM(t_i)=softmax(\overrightarrow(t_i)W^T)
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/12/26/2022-04-01-simcse%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/" data-id="cl4od7aay00007fhofgm8bugx" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/12/26/2022-04-01-simcse%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/" data-id="cl4odd8qs0001tzho9wgp0y5f" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AF%B9%E6%AF%94%E5%AD%A6%E4%B9%A0/" rel="tag">对比学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA/" rel="tag">数据增强</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-2022-04-08-WhiteningBERT" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/12/26/2022-04-08-WhiteningBERT/" class="article-date">
-  <time datetime="2020-12-26T08:14:36.000Z" itemprop="datePublished">2020-12-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="whiteningbert降低向量维度且效果提高">WhiteningBERT：降低向量维度且效果提高</h1>
-<h1 id="背景">背景</h1>
-<p>使用BERT等模型生成句向量，使用FAISS或ElasticSearch（ES）等引擎进行语义向量检索，是工业界常用的方法。然后在巨大的数据量时搜索时间成本巨大。</p>
-<p>Whitening-BERT借鉴PCA方法对语义向量进行降维。有效提升语义相似度计算的效果。</p>
-<p>首先介绍一下PCA降维降维方法。</p>
-<h2 id="pca主成分分析">PCA（主成分分析）</h2>
-<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1E5411E71z?share_source=copy_web">用最直观的方式告诉你：什么是主成分分析PCA</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/12/26/2022-04-08-WhiteningBERT/" data-id="cl4od7ab600017fhoclo16kh7" class="article-share-link">Share</a>
-      
-      
     </footer>
   </div>
   
