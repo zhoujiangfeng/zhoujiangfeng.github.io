@@ -173,28 +173,6 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="http://example.com/2020/12/26/2022-04-08-WhiteningBERT/"/>
-    <id>http://example.com/2020/12/26/2022-04-08-WhiteningBERT/</id>
-    <published>2020-12-26T08:14:36.000Z</published>
-    <updated>2022-06-21T16:16:42.004Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="whiteningbert降低向量维度且效果提高">WhiteningBERT：降低向量维度且效果提高</h1><h1 id="背景">背景</h1><p>使用BERT等模型生成句向量，使用FAISS或ElasticSearch（ES）等引擎进行语义向量检索，是工业界常用的方法。然后在巨大的数据量时搜索时间成本巨大。</p><p>Whitening-BERT借鉴PCA方法对语义向量进行降维。有效提升语义相似度计算的效果。</p><p>首先介绍一下PCA降维降维方法。</p><h2 id="pca主成分分析">PCA（主成分分析）</h2><p><a href="https://www.bilibili.com/video/BV1E5411E71z?share_source=copy_web">用最直观的方式告诉你：什么是主成分分析PCA</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;whiteningbert降低向量维度且效果提高&quot;&gt;WhiteningBERT：降低向量维度且效果提高&lt;/h1&gt;
-&lt;h1 id=&quot;背景&quot;&gt;背景&lt;/h1&gt;
-&lt;p&gt;使用BERT等模型生成句向量，使用FAISS或ElasticSearch（ES）等引擎进行语义向量检索，</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>SimCSE：一种对比学习数据增强方法</title>
     <link href="http://example.com/2020/12/26/2022-04-01-simcse%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/"/>
     <id>http://example.com/2020/12/26/2022-04-01-simcse%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</id>
@@ -221,6 +199,28 @@
     <category term="对比学习" scheme="http://example.com/tags/%E5%AF%B9%E6%AF%94%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="数据增强" scheme="http://example.com/tags/%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2020/12/26/2022-04-08-WhiteningBERT/"/>
+    <id>http://example.com/2020/12/26/2022-04-08-WhiteningBERT/</id>
+    <published>2020-12-26T08:14:36.000Z</published>
+    <updated>2022-06-21T16:16:42.004Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="whiteningbert降低向量维度且效果提高">WhiteningBERT：降低向量维度且效果提高</h1><h1 id="背景">背景</h1><p>使用BERT等模型生成句向量，使用FAISS或ElasticSearch（ES）等引擎进行语义向量检索，是工业界常用的方法。然后在巨大的数据量时搜索时间成本巨大。</p><p>Whitening-BERT借鉴PCA方法对语义向量进行降维。有效提升语义相似度计算的效果。</p><p>首先介绍一下PCA降维降维方法。</p><h2 id="pca主成分分析">PCA（主成分分析）</h2><p><a href="https://www.bilibili.com/video/BV1E5411E71z?share_source=copy_web">用最直观的方式告诉你：什么是主成分分析PCA</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;whiteningbert降低向量维度且效果提高&quot;&gt;WhiteningBERT：降低向量维度且效果提高&lt;/h1&gt;
+&lt;h1 id=&quot;背景&quot;&gt;背景&lt;/h1&gt;
+&lt;p&gt;使用BERT等模型生成句向量，使用FAISS或ElasticSearch（ES）等引擎进行语义向量检索，</summary>
+      
+    
+    
+    
     
   </entry>
   
