@@ -121,11 +121,11 @@
     <category term="GAN" scheme="http://example.com/categories/GAN/"/>
     
     
-    <category term="对比学习" scheme="http://example.com/tags/%E5%AF%B9%E6%AF%94%E5%AD%A6%E4%B9%A0/"/>
-    
     <category term="GAN" scheme="http://example.com/tags/GAN/"/>
     
     <category term="NLP" scheme="http://example.com/tags/NLP/"/>
+    
+    <category term="对比学习" scheme="http://example.com/tags/%E5%AF%B9%E6%AF%94%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
