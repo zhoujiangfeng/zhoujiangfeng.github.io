@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-06-22T05:22:25.515Z</updated>
+  <updated>2022-07-02T16:54:58.487Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第一次论文失败经历</title>
+    <link href="http://example.com/2022/07/03/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%BA%E6%96%87%E6%8A%95%E9%80%92%E5%A4%B1%E8%B4%A5%E7%BB%8F%E5%8E%86/"/>
+    <id>http://example.com/2022/07/03/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%BA%E6%96%87%E6%8A%95%E9%80%92%E5%A4%B1%E8%B4%A5%E7%BB%8F%E5%8E%86/</id>
+    <published>2022-07-02T16:00:00.000Z</published>
+    <updated>2022-07-02T16:54:58.487Z</updated>
+    
+    <content type="html"><![CDATA[<p>去年九月份，采购问答机器人项目由于缺乏数据，原始文件就几百条，导致模型准确率较低，老板催促解决这个问题，在组会上提出了数据扩充技术，下来实验，采用回译尝试了一下，遂进入数据增强方面工作，由于国庆结束，去兵科院实习了三个月，在实习之余完成了 基本实验，开年2-4月继续实验，改论文，4月初在老板的要求下投了一个CCF C类期刊，计算机应用，感觉这个名字还挺好听，当时幻想着一投就中，所以改了又改，图画了又画（全文唯一满意的就是模型图了）。然后7月第一天，下午去实验室，收到邮件，让修改后录增刊，给老板发消息，老板说不投了，再想办法。</p><hr /><p>全过程</p><figure><img src="https://cdn.jsdelivr.net/gh/zhoujiangfeng/images@main/20220703005118.png" alt="image-20220703005053712" /><figcaption aria-hidden="true">image-20220703005053712</figcaption></figure><p>耗费了3个月，6-7月其实光在等结果了，无心第二篇的写作。ε=(´ο｀*)))唉</p><p>本来6-10号三审就结束了，中间直接停滞了半个月。</p><p>希望下次运气好一点。</p><p>近期再写一篇，继续投，缓解一下焦虑。没论文在手里可太难了。都不能全身心投入工作准备中...</p><p>祝好运！加油</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;去年九月份，采购问答机器人项目由于缺乏数据，原始文件就几百条，导致模型准确率较低，老板催促解决这个问题，在组会上提出了数据扩充技术，下来实验，采用回译尝试了一下，遂进入数据增强方面工作，由于国庆结束，去兵科院实习了三个月，在实习之余完成了 基本实验，开年2-4月继续实验，改</summary>
+      
+    
+    
+    
+    <category term="学术垃圾制造" scheme="http://example.com/categories/%E5%AD%A6%E6%9C%AF%E5%9E%83%E5%9C%BE%E5%88%B6%E9%80%A0/"/>
+    
+    
+    <category term="NLP" scheme="http://example.com/tags/NLP/"/>
+    
+    <category term="DA" scheme="http://example.com/tags/DA/"/>
+    
+  </entry>
   
   <entry>
     <title>换了新主题，显示不了LaTeX公式</title>
@@ -121,11 +147,11 @@
     <category term="GAN" scheme="http://example.com/categories/GAN/"/>
     
     
+    <category term="对比学习" scheme="http://example.com/tags/%E5%AF%B9%E6%AF%94%E5%AD%A6%E4%B9%A0/"/>
+    
     <category term="GAN" scheme="http://example.com/tags/GAN/"/>
     
     <category term="NLP" scheme="http://example.com/tags/NLP/"/>
-    
-    <category term="对比学习" scheme="http://example.com/tags/%E5%AF%B9%E6%AF%94%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
