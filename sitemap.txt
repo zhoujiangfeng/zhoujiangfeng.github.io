@@ -20,14 +20,14 @@ http://example.com/tags/NLP/
 http://example.com/tags/Mixup/
 http://example.com/tags/MixUp/
 http://example.com/tags/DA/
-http://example.com/tags/MixUP/
 http://example.com/tags/pytorch/
+http://example.com/tags/MixUP/
 http://example.com/tags/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/
 http://example.com/categories/%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA/
 http://example.com/categories/BERT/
-http://example.com/categories/%E7%A0%94%E7%A9%B6%E7%82%B9/
 http://example.com/categories/GAN/
+http://example.com/categories/%E7%A0%94%E7%A9%B6%E7%82%B9/
 http://example.com/categories/DA/
 http://example.com/categories/code/
-http://example.com/categories/%E5%AD%A6%E6%9C%AF%E5%9E%83%E5%9C%BE%E5%88%B6%E9%80%A0/
 http://example.com/categories/%E6%9C%AD%E8%AE%B0/
+http://example.com/categories/%E5%AD%A6%E6%9C%AF%E5%9E%83%E5%9C%BE%E5%88%B6%E9%80%A0/

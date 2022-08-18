@@ -28,11 +28,15 @@
       window.addEventListener('hashchange', switchTab, false);
   })();
   </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="都灵的夏天" type="application/atom+xml">
-</head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="都灵的夏天" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/archives">所有文章</a><a class="navbar-item" href="/categories">目录</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">标签</a></li><li class="is-active"><a href="#" aria-current="page">数据增强</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-03-31T16:00:00.000Z" title="4/1/2022, 12:00:00 AM">2022-04-01</time>发表</span><span class="level-item"><time dateTime="2022-06-22T05:12:35.653Z" title="6/22/2022, 1:12:35 PM">2022-06-22</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA/">数据增强</a></span><span class="level-item">7 分钟读完 (大约1042个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2022/04/01/simcse%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/">SimCSE：一种对比学习数据增强方法</a></h1><div class="content"><h1 id="Title"><a href="#Title" class="headerlink" title="Title"></a>Title</h1><p>SimCSE: Simple Contrastive Learning of Sentence Embeddings</p>
-<h2 id="Time"><a href="#Time" class="headerlink" title="Time"></a>Time</h2><p>2021.9</p>
-<h2 id="Publish"><a href="#Publish" class="headerlink" title="Publish"></a>Publish</h2><p>Emnlp2021</p>
-<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p><img src="https://cdn.jsdelivr.net/gh/zhoujiangfeng/images@main/20220323164848.png" alt="image-20220323164848858" style="zoom:25%;" /></p>
-<ol>
+</head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="都灵的夏天" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/archives">所有文章</a><a class="navbar-item" href="/categories">目录</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">标签</a></li><li class="is-active"><a href="#" aria-current="page">数据增强</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-03-31T16:00:00.000Z" title="4/1/2022, 12:00:00 AM">2022-04-01</time>发表</span><span class="level-item"><time dateTime="2022-06-22T05:12:35.653Z" title="6/22/2022, 1:12:35 PM">2022-06-22</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA/">数据增强</a></span><span class="level-item">7 分钟读完 (大约1042个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2022/04/01/simcse%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/">SimCSE：一种对比学习数据增强方法</a></h1><div class="content"><h1 id="title">Title</h1>
+<p>SimCSE: Simple Contrastive Learning of Sentence Embeddings</p>
+<h2 id="time">Time</h2>
+<p>2021.9</p>
+<h2 id="publish">Publish</h2>
+<p>Emnlp2021</p>
+<h2 id="summary">Summary</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/zhoujiangfeng/images@main/20220323164848.png" alt="image-20220323164848858" style="zoom:25%;" /></p>
+<ol type="1">
 <li>提出了目前在sentence embedding 领域表现最优的对比学习框架SimCSE</li>
 <li>首先使用无监督方法，将输入sentence和其预测的sentence1作为对比目标，其只经过一个标准的dropout作为噪音，取得的很好效果，与以前的有监督效果相当。</li>
 <li>其发现利用 dropout作为数据增强操作有很好的效果，且移除它会导致表示效果变差。</li>
@@ -40,50 +44,56 @@
 <li>最后在STS任务评测，无监督、有监督simcse+bert_base 斯皮尔曼相关系数分别提升4.2%、2.2%</li>
 <li>证明：对比学习 正则化了 预训练模型嵌入 各向异性空间变得更加统一，使用监督学习能够使得正样本更好的对齐。</li>
 </ol>
-<h2 id="Method-s"><a href="#Method-s" class="headerlink" title="Method(s)"></a>Method(s)</h2><h3 id="无监督SimCSE实现"><a href="#无监督SimCSE实现" class="headerlink" title="无监督SimCSE实现"></a><strong>无监督SimCSE实现</strong></h3><p><img src="https://cdn.jsdelivr.net/gh/zhoujiangfeng/images@main/20220323171412.png" alt="无监督SimCSE" style="zoom:25%;" /></p>
-<ol>
+<h2 id="methods">Method(s)</h2>
+<h3 id="无监督simcse实现"><strong>无监督SimCSE实现</strong></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/zhoujiangfeng/images@main/20220323171412.png" alt="无监督SimCSE" style="zoom:25%;" /></p>
+<ol type="1">
 <li>将句子输入 dropout作为noise</li>
 <li>将同一句输入预训练模型编码器两次：应用标准的dropout两次。获得两个不同的嵌入作为“positive pairs”</li>
 <li>同一个batch其他句子，组合作为“negatives”</li>
 <li>最后模型从这些“negatives”中预测“positive”</li>
 </ol>
-<h3 id="train-objective"><a href="#train-objective" class="headerlink" title="train objective"></a>train objective</h3><p>同样的input到编码器两次，获得两个embedding$z$,$z^{\prime}$</p>
-<p>$\ell<em>{i}=-\log \frac{e^{\operatorname{sim}\left(\mathbf{h}</em>{i}^{z<em>{i} }, \mathbf{h}</em>{i}^{z<em>{i}^{\prime} }\right) / \tau} }{\sum</em>{j=1}^{N} e^{\operatorname{sim}\left(\mathbf{h}<em>{i}^{z</em>{i} }, \mathbf{h}<em>{j}^{z</em>{j}^{\prime} }\right) / \tau} }$</p>
-<p>$z$仅仅使用transformer标准的dropout mask</p>
+<h3 id="train-objective">train objective</h3>
+<p>同样的input到编码器两次，获得两个embedding<span class="math inline">\(z\)</span>,<span class="math inline">\(z^{\prime}\)</span></p>
+<p><span class="math inline">\(\ell_{i}=-\log \frac{e^{\operatorname{sim}\left(\mathbf{h}_{i}^{z_{i} }, \mathbf{h}_{i}^{z_{i}^{\prime} }\right) / \tau} }{\sum_{j=1}^{N} e^{\operatorname{sim}\left(\mathbf{h}_{i}^{z_{i} }, \mathbf{h}_{j}^{z_{j}^{\prime} }\right) / \tau} }\)</span></p>
+<p><span class="math inline">\(z\)</span>仅仅使用transformer标准的dropout mask</p>
 <p><strong>结论：</strong>dropout对隐藏的表示起到了最小的“数据扩充”作用，而删除它则会导致表示崩溃。</p>
-<h3 id="有监督SimCSE实现"><a href="#有监督SimCSE实现" class="headerlink" title="有监督SimCSE实现"></a><strong>有监督SimCSE实现</strong></h3><p><img src="https://cdn.jsdelivr.net/gh/zhoujiangfeng/images@main/20220324113118.png" alt="image-20220324113118463" style="zoom:40%;" /></p>
+<h3 id="有监督simcse实现"><strong>有监督SimCSE实现</strong></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/zhoujiangfeng/images@main/20220324113118.png" alt="image-20220324113118463" style="zoom:40%;" /></p>
 <ul>
 <li>使用自然语言推理数据集，样例如上</li>
 </ul>
 <p>1.将原有三分类任务（蕴含，中立，相反）降低为（蕴含，相反），其中“中立”被视为正样本。</p>
 <p>2.添加对应的相反 语句对视为 hard negative 进一步提升表现。NLI数据集效果尤其好。</p>
-<h3 id="train-objective-1"><a href="#train-objective-1" class="headerlink" title="train objective"></a>train objective</h3><p>将$x，x_i^+$扩展为$x，x_i^+，x_i^-$,以$x$为基础，$x_i^+$和$x_i^-$为蕴含和相反 假设</p>
+<h3 id="train-objective-1">train objective</h3>
+<p>将<span class="math inline">\(x，x_i^+\)</span>扩展为<span class="math inline">\(x，x_i^+，x_i^-\)</span>,以<span class="math inline">\(x\)</span>为基础，<span class="math inline">\(x_i^+\)</span>和<span class="math inline">\(x_i^-\)</span>为蕴含和相反 假设</p>
 <p>其训练目标为</p>
-<p>​    $-\log \frac{e^{\operatorname{sim}\left(\mathbf{h}<em>{i}, \mathbf{h}</em>{i}^{+}\right) / \tau} }{\sum<em>{j=1}^{N}\left(e^{\operatorname{sim}\left(\mathbf{h}</em>{i}, \mathbf{h}<em>{j}^{+}\right) / \tau}+e^{\operatorname{sim}\left(\mathbf{h}</em>{i}, \mathbf{h}_{j}^{-}\right) / \tau}\right)}$</p>
-<h2 id="Evaluation"><a href="#Evaluation" class="headerlink" title="Evaluation"></a>Evaluation</h2><p>对比学习分析工具：</p>
-<ol>
+<p>​ <span class="math inline">\(-\log \frac{e^{\operatorname{sim}\left(\mathbf{h}_{i}, \mathbf{h}_{i}^{+}\right) / \tau} }{\sum_{j=1}^{N}\left(e^{\operatorname{sim}\left(\mathbf{h}_{i}, \mathbf{h}_{j}^{+}\right) / \tau}+e^{\operatorname{sim}\left(\mathbf{h}_{i}, \mathbf{h}_{j}^{-}\right) / \tau}\right)}\)</span></p>
+<h2 id="evaluation">Evaluation</h2>
+<p>对比学习分析工具：</p>
+<ol type="1">
 <li><p>alignment</p>
 <p>测试语义相关的正样本对齐程度</p>
-<p>$\ell<em>{\text {align } } \triangleq \underset{\left(x, x^{+}\right) \sim p</em>{\text {pos } } }{\mathbb{E} }\left|f(x)-f\left(x^{+}\right)\right|^{2}$</p>
-<p>其中$p_{pos}$表示 语句对对应的分布式的句向量，假设其中表示均已正则化</p>
-</li>
+<p><span class="math inline">\(\ell_{\text {align } } \triangleq \underset{\left(x, x^{+}\right) \sim p_{\text {pos } } }{\mathbb{E} }\left\|f(x)-f\left(x^{+}\right)\right\|^{2}\)</span></p>
+<p>其中<span class="math inline">\(p_{pos}\)</span>表示 语句对对应的分布式的句向量，假设其中表示均已正则化</p></li>
+<li><p>uniformity</p>
+<p>利用整个表示空间的均匀性来衡量学习嵌入的质量</p></li>
 </ol>
-<ol>
-<li><p>uniformity </p>
-<p>利用整个表示空间的均匀性来衡量学习嵌入的质量</p>
-</li>
-</ol>
-<p>​        $\ell<em>{\text {uniform } } \triangleq \log \underset{x, y \stackrel{\mathbb{i} . i . d .}{\sim} p</em>{\text {data } } }{ } e^{-2|f(x)-f(y)|^{2} }$</p>
+<p>​ <span class="math inline">\(\ell_{\text {uniform } } \triangleq \log \underset{x, y \stackrel{\mathbb{i} . i . d .}{\sim} p_{\text {data } } }{ } e^{-2\|f(x)-f(y)\|^{2} }\)</span></p>
 <p>这两个指标与对比学习的目标是一致的:正面实例应该保持接近，而随机实例的嵌入应该分散在超球体上。<img src="https://cdn.jsdelivr.net/gh/zhoujiangfeng/images@main/20220324155942.png" alt="image-20220324155942504" style="zoom: 33%;" /><img src="/Users/zhoujiangfeng/Library/Application%20Support/typora-user-images/image-20220324170115756.png" alt="image-20220324170115756" style="zoom:50%;" /></p>
 <p>其数字越小越好</p>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><h6 id=""><a href="#" class="headerlink" title=""></a><img src="https://cdn.jsdelivr.net/gh/zhoujiangfeng/images@main/20220324164727.png" alt="image-20220324164727102" style="zoom:50%;" /></h6><p><img src="https://cdn.jsdelivr.net/gh/zhoujiangfeng/images@main/20220324164933.png" alt="image-20220324164933309" style="zoom: 50%;" /></p>
-<h2 id="Notes"><a href="#Notes" class="headerlink" title="Notes"></a>Notes</h2><h4 id="对比学习："><a href="#对比学习：" class="headerlink" title="对比学习："></a><strong>对比学习</strong>：</h4><p><em>对比学习的目的是通过把语义上相近的邻居拉到一起，把非邻居推开来学习有效的表征</em></p>
-<p>假定语句集$\mathcal{D}=\left{\left(x<em>{i}, x</em>{i}^{+}\right)\right}<em>{i=1}^{m}$，其$x</em>{i}$和$x_{i}^{+}$语义相关</p>
+<h2 id="conclusion">Conclusion</h2>
+<h6 id="section"><img src="https://cdn.jsdelivr.net/gh/zhoujiangfeng/images@main/20220324164727.png" alt="image-20220324164727102" style="zoom:50%;" /></h6>
+<p><img src="https://cdn.jsdelivr.net/gh/zhoujiangfeng/images@main/20220324164933.png" alt="image-20220324164933309" style="zoom: 50%;" /></p>
+<h2 id="notes">Notes</h2>
+<h4 id="对比学习"><strong>对比学习</strong>：</h4>
+<p><em>对比学习的目的是通过把语义上相近的邻居拉到一起，把非邻居推开来学习有效的表征</em></p>
+<p>假定语句集<span class="math inline">\(\mathcal{D}=\left\{\left(x_{i}, x_{i}^{+}\right)\right\}_{i=1}^{m}\)</span>，其<span class="math inline">\(x_{i}\)</span>和<span class="math inline">\(x_{i}^{+}\)</span>语义相关</p>
 <p>采用交叉熵损失</p>
-<p>其$h<em>{i}$和$h</em>{i}^{+}$表示$x<em>{i}$和$x</em>{i}^{+}$</p>
-<p>对于（$x<em>{i}$，$x</em>{i}^{+}$）的Npair mini-batch 的训练目标为</p>
-<p>$\ell<em>{i}=-\log \frac{e^{\operatorname{sim}\left(\mathbf{h}</em>{i}, \mathbf{h}<em>{i}^{+}\right) / \tau} } {\sum</em>{j=1}^{N} e^{\operatorname{sim}\left(\mathbf{h}<em>{i}, \mathbf{h}</em>{j}^{+}\right) / \tau} } $</p>
-<p>其中$\tau$为超参数，$\operatorname{sim}\left(\mathbf{h}<em>{i}, \mathbf{h}</em>{i}^{+}\right)$表示cos相似度$\frac{\mathbf{h}<em>{1}^{\top} \mathbf{h}</em>{2} }{\left|\mathbf{h}<em>{1}\right| \cdot\left|\mathbf{h}</em>{2}\right|}$</p>
+<p>其<span class="math inline">\(h_{i}\)</span>和<span class="math inline">\(h_{i}^{+}\)</span>表示<span class="math inline">\(x_{i}\)</span>和<span class="math inline">\(x_{i}^{+}\)</span></p>
+<p>对于（<span class="math inline">\(x_{i}\)</span>，<span class="math inline">\(x_{i}^{+}\)</span>）的Npair mini-batch 的训练目标为</p>
+<p>$<em>{i}=- {</em>{j=1}^{N} e<sup>{(<em>{i}, </em>{j}</sup>{+}) / } } $</p>
+<p>其中<span class="math inline">\(\tau\)</span>为超参数，<span class="math inline">\(\operatorname{sim}\left(\mathbf{h}_{i}, \mathbf{h}_{i}^{+}\right)\)</span>表示cos相似度<span class="math inline">\(\frac{\mathbf{h}_{1}^{\top} \mathbf{h}_{2} }{\left\|\mathbf{h}_{1}\right\| \cdot\left\|\mathbf{h}_{2}\right\|}\)</span></p>
 <p><strong>使用步骤</strong></p>
 <p>首先利用PLM编码输入sentence</p>
 <p>然后利用上述对比学习目标fine-tune所有参数</p>
