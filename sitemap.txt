@@ -21,9 +21,9 @@ http://example.com/tags/NLP/
 http://example.com/tags/Mixup/
 http://example.com/tags/MixUp/
 http://example.com/tags/DA/
-http://example.com/tags/MixUP/
 http://example.com/tags/pytorch/
 http://example.com/tags/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/
+http://example.com/tags/MixUP/
 http://example.com/categories/%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA/
 http://example.com/categories/BERT/
 http://example.com/categories/GAN/

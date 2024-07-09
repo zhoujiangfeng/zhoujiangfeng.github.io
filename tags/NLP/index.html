@@ -156,6 +156,24 @@ S_{\lambda}(\mathbf{x}) \triangleq\left\{t \mid t \in S(\mathbf{x})\right., s.t.
 </figure>
 <h2 id="conclusion">Conclusion</h2>
 <p>没找到代码，自己摸索了。</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-05-26T16:00:00.000Z" title="5/27/2022, 12:00:00 AM">2022-05-27</time>发表</span><span class="level-item"><time dateTime="2022-06-22T03:45:48.471Z" title="6/22/2022, 11:45:48 AM">2022-06-22</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/GAN/">GAN</a></span><span class="level-item">2 分钟读完 (大约358个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2022/05/27/%E3%80%8CGAN%E3%80%8D2021EMNLP%EF%BC%9A%E5%AF%B9LGAN%E8%BF%9B%E8%A1%8CCounter-Contrastive%E5%AD%A6%E4%B9%A0/">Counter-Contrastive 学习：训练Language GAN</a></h1><div class="content"><h2 id="publish">Publish</h2>
+<p>2021EMNLP</p>
+<h2 id="title">title</h2>
+<p><a target="_blank" rel="noopener" href="https://aclanthology.org/2021.findings-emnlp.415.pdf">Counter-Contrastive Learning for Language GANs</a></p>
+<h2 id="摘要">摘要</h2>
+<p>生成对抗网络(GANs)在图像合成方面取得了巨大的成功，但在生成自然语言方面存在一定的困难。挑战来自于鉴别器传递的uninformative learning signal。换句话说，<strong>糟糕的learning singnal限制了生成结构丰富、语义丰富的语言的学习能力</strong>。在本文中，我们提出在语言gan中采用反对比学习(CCL)方法来支持生成器的训练。与标准的GANs采用简单的二元分类器来区分样本的真假相比，我们采用了一种反对比学习信号，通过提高语言合成器的训练</p>
+<ul>
+<li>(1)把生成样本与真实样本 放在一起（以生成真实的数据）</li>
+<li>(2)推开真实的样本（以阻碍鉴别的训练）从而防止鉴别器被过度训练。</li>
+</ul>
+<p>我们在合成基准和实际基准上评估了我们的方法，并与以前的GAN相比，在对抗序列生成方面产生了具有竞争力的性能。</p>
+<h2 id="solution-problem">Solution problem</h2>
+<p>CCL <span class="math display">\[
+\mathcal{L}_{i}=-\log \frac{e^{\operatorname{sim}\left(\mathbf{h}_{i}, \mathbf{h}_{i}^{-}\right) / \tau}}{\sum_{j=1}^{N}\left(e^{\operatorname{sim}\left(\mathbf{h}_{j}, \mathbf{h}_{j}^{-}\right) / \tau}+e^{\operatorname{sim}\left(\mathbf{h}_{j}, \mathbf{h}_{j}^{+}\right) / \tau}\right)}
+\]</span></p>
+<h2 id="experiment">Experiment</h2>
+<h2 id="conclusion">Conclusion</h2>
+<p>没代码，不看了。</p>
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-05-26T16:00:00.000Z" title="5/27/2022, 12:00:00 AM">2022-05-27</time>发表</span><span class="level-item"><time dateTime="2022-06-22T03:46:12.369Z" title="6/22/2022, 11:46:12 AM">2022-06-22</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/GAN/">GAN</a></span><span class="level-item">13 分钟读完 (大约1997个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2022/05/27/%E3%80%8CGAN%E3%80%8D%E5%90%84%E7%A7%8DGAN%E5%8E%9F%E7%90%86%E6%80%BB%E7%BB%93%E5%AF%B9%E6%AF%94/">GAN原理总结及对比</a></h1><div class="content"><h2 id="原始gan">原始GAN</h2>
 <p>GAN的主要灵感来源于博弈论中零和博弈的思想，应用到深度学习神经网络上来说，就是通过生成网络G（Generator）和判别网络D（Discriminator）不断博弈，进而使G学习到数据的分布，如果用到图片生成上，则训练完成后，G可以从一段随机数中生成逼真的图像。G， D的主要功能是：</p>
 <p>● G是一个生成式的网络，它接收一个随机的噪声z（随机数），通过这个噪声生成图像</p>
@@ -203,24 +221,6 @@ S_{\lambda}(\mathbf{x}) \triangleq\left\{t \mid t \in S(\mathbf{x})\right., s.t.
 </ol>
 <hr />
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/Gavinmiaoc/article/details/79947877">来源</a></p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-05-26T16:00:00.000Z" title="5/27/2022, 12:00:00 AM">2022-05-27</time>发表</span><span class="level-item"><time dateTime="2022-06-22T03:45:48.471Z" title="6/22/2022, 11:45:48 AM">2022-06-22</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/GAN/">GAN</a></span><span class="level-item">2 分钟读完 (大约358个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2022/05/27/%E3%80%8CGAN%E3%80%8D2021EMNLP%EF%BC%9A%E5%AF%B9LGAN%E8%BF%9B%E8%A1%8CCounter-Contrastive%E5%AD%A6%E4%B9%A0/">Counter-Contrastive 学习：训练Language GAN</a></h1><div class="content"><h2 id="publish">Publish</h2>
-<p>2021EMNLP</p>
-<h2 id="title">title</h2>
-<p><a target="_blank" rel="noopener" href="https://aclanthology.org/2021.findings-emnlp.415.pdf">Counter-Contrastive Learning for Language GANs</a></p>
-<h2 id="摘要">摘要</h2>
-<p>生成对抗网络(GANs)在图像合成方面取得了巨大的成功，但在生成自然语言方面存在一定的困难。挑战来自于鉴别器传递的uninformative learning signal。换句话说，<strong>糟糕的learning singnal限制了生成结构丰富、语义丰富的语言的学习能力</strong>。在本文中，我们提出在语言gan中采用反对比学习(CCL)方法来支持生成器的训练。与标准的GANs采用简单的二元分类器来区分样本的真假相比，我们采用了一种反对比学习信号，通过提高语言合成器的训练</p>
-<ul>
-<li>(1)把生成样本与真实样本 放在一起（以生成真实的数据）</li>
-<li>(2)推开真实的样本（以阻碍鉴别的训练）从而防止鉴别器被过度训练。</li>
-</ul>
-<p>我们在合成基准和实际基准上评估了我们的方法，并与以前的GAN相比，在对抗序列生成方面产生了具有竞争力的性能。</p>
-<h2 id="solution-problem">Solution problem</h2>
-<p>CCL <span class="math display">\[
-\mathcal{L}_{i}=-\log \frac{e^{\operatorname{sim}\left(\mathbf{h}_{i}, \mathbf{h}_{i}^{-}\right) / \tau}}{\sum_{j=1}^{N}\left(e^{\operatorname{sim}\left(\mathbf{h}_{j}, \mathbf{h}_{j}^{-}\right) / \tau}+e^{\operatorname{sim}\left(\mathbf{h}_{j}, \mathbf{h}_{j}^{+}\right) / \tau}\right)}
-\]</span></p>
-<h2 id="experiment">Experiment</h2>
-<h2 id="conclusion">Conclusion</h2>
-<p>没代码，不看了。</p>
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-05-25T16:00:00.000Z" title="5/26/2022, 12:00:00 AM">2022-05-26</time>发表</span><span class="level-item"><time dateTime="2022-06-22T03:44:58.695Z" title="6/22/2022, 11:44:58 AM">2022-06-22</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/DA/">DA</a></span><span class="level-item">6 分钟读完 (大约942个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2022/05/26/%E3%80%8C%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA%E3%80%8D2022NAACL%EF%BC%9ATextSmoth/">Text Smoothing：一种数据结合mix-up的数据增强方法</a></h1><div class="content"><h2 id="publish">Publish</h2>
 <p>2022ACL</p>
 <h2 id="title">title</h2>
